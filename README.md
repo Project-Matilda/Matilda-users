@@ -4,6 +4,7 @@ the workflow
 3) registered successfully in db and access key generated
 4) username,pwd, access key asked as input 
 5) after cross checking in db, a message is displayed (as of now) denoting a successful login.
+
 Points to note:
 1) no duplication of registration data
 2) access key validity= 7 days
@@ -15,6 +16,7 @@ Points to note:
 how to access:
 create a superuser and go to postman in authorization click basic auth and give those credentials to perform CRUD operations on Registered data.
 as a normal user, give the token in both input field and in postman authorization click bearer token and give the token generated.
+
 links for access:
 http://127.0.0.1:8000/api/api/login/
 http://127.0.0.1:8000/api/api/register/
