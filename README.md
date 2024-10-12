@@ -11,6 +11,7 @@ Points to note:
 4) works in both rest framework HTML and raw data form as well as postman
 5) only after giving the access token in postman the admin can do crud operations
 6) diff users,diff keys, use them alone
+
 how to access:
 create a superuser and go to postman in authorization click basic auth and give those credentials to perform CRUD operations on Registered data.
 as a normal user, give the token in both input field and in postman authorization click bearer token and give the token generated.
