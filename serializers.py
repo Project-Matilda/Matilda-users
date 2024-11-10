@@ -9,6 +9,8 @@ from rest_framework_simplejwt.tokens import AccessToken  # Import AccessToken fo
 
 User = get_user_model()
 
+# users/serializers.py
+
 class UserSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(
         required=True,
@@ -33,10 +35,8 @@ class UserSerializer(serializers.ModelSerializer):
         )
         user.set_password(validated_data['password'])  # Hash the password
         user.save()
-        
-        # Generate token for the user
-        token = AccessToken.for_user(user)
-        return {'token': str(token)}  # Return token on registration
+        return user  # Return the User instance directly
+
 
 
 class LoginSerializer(serializers.Serializer):
