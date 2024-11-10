@@ -57,12 +57,12 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wbfwlabque',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydb',
+        'USER': 'postgres',
+        'PASSWORD': 'root',  # Replace with your actual password
+        'HOST': 'localhost',           # Use '127.0.0.1' if localhost doesn't work
+        'PORT': '5432',                # Default PostgreSQL port
     }
 }
 
